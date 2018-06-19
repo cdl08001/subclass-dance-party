@@ -5,6 +5,7 @@ var BlinkyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
 
   this.step(timeBetweenSteps);
+
 };
 
 

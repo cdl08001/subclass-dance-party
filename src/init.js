@@ -29,6 +29,7 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
 });
 
 //var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
