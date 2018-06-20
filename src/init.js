@@ -27,10 +27,33 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
-    $('body').append(dancer.$node);
+    $('.w3-container').append(dancer.$node);
+  });
+  
+  $('.w3-container').on('mouseover', 'span', function(event) {
+    $(this).slideUp('slow', function() { 
+    });
+    //console.log('clicked');
+    
   });
 
+  $('.moveDancers').on('click', function(event) {
+    console.log('test');
+  });
+    
 });
+
+/*
+  $('.w3-container').on('mouseover', 'span', function(event) {
+    //Select all dancers:
+    // var dancers = $();
+    console.log('clicked');
+    
+  });
+*/
+
+
 
 //var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
+// Created event handler 'moveDancer'

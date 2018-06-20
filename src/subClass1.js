@@ -5,7 +5,7 @@ var subClass1 = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
 
   this.step(timeBetweenSteps);
-  this.$node = $('<span class="subClass1"></span>');
+  this.$node = $('<span class="subClass1 w3-animate-zoom w3-spin"></span>');
   this.setPosition(top, left);
 
 };

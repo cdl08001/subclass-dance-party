@@ -10,15 +10,16 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.container{
+.w3-container{
   height: 100%;
-  background-color: white;
+  background-color: black;
   background-image: url("images/background.png");
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.title, .addDancerButton{
+.title, .addDancerButton {
   padding:5px 12px;
   float:right;
 }
@@ -30,16 +31,23 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 
+.spinnyArrow{
+  content: url('images/arrow.png');
+  height: 100px;
+  /*border:10px solid blue;*/
+  /*border-radius:10px;*/
+  position:absolute;
+}
 .subClass1{
-  /*content: url('images/arrow.png');*/
-  /*height: 100px;*/
+  content: url('https://www.speedrun.com/themes/Dance_Dance_Revolution_II/1st.png');
+  height: 100px;
   /*animation: slidein*/
-  border:10px solid green;
+  /*border: 10px solid green;*/
   position:absolute;
 }
 
 .upArrow{
-  content: url('images/arrow.png');
+  content: url('http://rsmg.pbsrc.com/albums/v670/vixen_007/Dance%20Dance%20Revolution/eb01bf3c.gif~c200');
   height: 100px;
   /*border:10px solid blue;*/
   /*border-radius:10px;*/
