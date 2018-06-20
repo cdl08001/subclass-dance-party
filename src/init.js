@@ -38,7 +38,7 @@ $(document).ready(function() {
   });
 
   $('.moveDancers').on('click', function(event) {
-    console.log('test');
+    $('.w3-container span').css('left', '0px');
   });
     
 });
