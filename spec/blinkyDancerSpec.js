@@ -33,3 +33,38 @@ describe('blinkyDancer', function() {
     });
   });
 });
+
+describe('SpinnyDancer', function() {
+  var spinnyDancer, clock;
+  var timeBetweenSteps = 100;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    spinnyDancer = new SpinnyDancer(10, 20, timeBetweenSteps);
+    console.log(SpinnyDancer);
+  });
+  
+  it('should have a w3-spin class', function() {
+    expect(spinnyDancer.$node.hasClass('w3-spin')).to.be.true;
+  });
+});
+
+
+describe('GetUpDancer', function() {
+  var getUpDancer, clock;
+  var timeBetweenSteps = 100;
+  
+
+  
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    getUpDancer = new upArrow(15, 25, timeBetweenSteps);
+    
+    console.log(getUpDancer);
+  });
+  
+  it('getUpDancers should fade in upon creation', function() {
+    expect(getUpDancer.$node.hasClass('w3-animate-fading')).to.be.true;
+  });
+});
+

@@ -3,7 +3,6 @@ var subClass1 = function(top, left, timeBetweenSteps) {
   // so we must keep a copy of the old version of this function
 
   Dancer.call(this, top, left, timeBetweenSteps);
-
   this.step(timeBetweenSteps);
   this.$node = $('<span class="subClass1 w3-animate-zoom w3-spin"></span>');
   this.setPosition(top, left);

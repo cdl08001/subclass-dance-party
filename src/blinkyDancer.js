@@ -17,7 +17,7 @@ BlinkyDancer.constructor = BlinkyDancer;
 BlinkyDancer.prototype.step = function(time) {
 
   Dancer.prototype.step.call(this, time);
-  // this.$node.toggle();
+  this.$node.toggle();
 
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and

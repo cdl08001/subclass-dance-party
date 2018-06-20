@@ -1,5 +1,6 @@
 $(document).ready(function() {
   window.dancers = [];
+  window.hasBeenClicked = 0;
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -39,6 +40,7 @@ $(document).ready(function() {
 
   $('.moveDancers').on('click', function(event) {
     $('.w3-container span').css('left', '0px');
+    window.hasBeenClicked++;
   });
     
 });

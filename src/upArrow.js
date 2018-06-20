@@ -11,17 +11,17 @@ var upArrow = function(top, left, timeBetweenSteps) {
   // this.$node.fadeIn('slow');
 };
 
-upArrow.prototype.fadeIn = function () {
+// upArrow.prototype.fadeIn = function () {
   
-  this.$node.fadeIn('slow');
-  this.fadeOut();
-};
+//   this.$node.fadeIn('slow');
+//   this.fadeOut();
+// };
 
-upArrow.prototype.fadeOut = function () {
+// upArrow.prototype.fadeOut = function () {
   
-  this.$node.fadeOut('slow');
-  this.fadeIn();
-};
+//   this.$node.fadeOut('slow');
+//   this.fadeIn();
+// };
 
 
 upArrow.prototype = Object.create(Dancer.prototype);
